@@ -11,6 +11,13 @@ angular.module('lanuitdelinfoFrontApp')
             controller: 'LoginCtrl as loginCtrl'
         };
         
+        // SIGNUP
+        var signupState = {
+            url: '/signup',
+            templateUrl: 'views/partials/signup.html',
+            controller: 'signupCtrl as signupCtrl'
+        };
+        
         // ERROR 404 NOT FOUND
         var notFoundState = {
             url: '/notfound',
@@ -36,6 +43,7 @@ angular.module('lanuitdelinfoFrontApp')
             .state(States.BASE, baseState)
             .state(States.NOT_FOUND, notFoundState)
             .state(States.LOGIN, loginState)
+            .state(States.SIGNUP, signupState)
             .state(States.HOME, homeState);
         
         $urlRouterProvider.when('', homeState.url);
