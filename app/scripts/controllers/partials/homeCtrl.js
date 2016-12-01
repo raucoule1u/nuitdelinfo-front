@@ -8,7 +8,7 @@
  * Controller of the lanuitdelinfoFrontApp
  */
 angular.module('lanuitdelinfoFrontApp')
-  .controller('MainCtrl', function () {
+  .controller('HomeCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
