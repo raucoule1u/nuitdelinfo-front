@@ -1,0 +1,96 @@
+
+  <div class="column col-md-8">
+    <div class="jumbotron">
+      <h1> Nom groupe</h1>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+    <section id="cd-timeline">
+      <div class="cd-timeline-block">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="cd-timeline-content">
+              <h4>Action n°1</h4>
+              <p>Ajout d'une tâche dans le planning de Gant</p>
+              <a href="#0" class="cd-read-more">par Membre n°1</a>
+              <span class="cd-date"> | 16 Novembre à 8h45</span>
+            </div> <!-- cd-timeline-content -->
+          </li>
+          <div class="space_item"></div>
+          <li class="list-group-item">
+            <div class="cd-timeline-content">
+              <h4>Action n°2</h4>
+              <p>Ajout d'une tâche dans le planning de Gant</p>
+              <a href="#0" class="cd-read-more">par Membre n°1</a>
+              <span class="cd-date"> | 16 Novembre à 8h45</span>
+            </div> <!-- cd-timeline-content -->
+          </li>
+        </ul>
+      </div> <!-- cd-timeline-block -->
+
+    </section>
+
+      </div>
+    </div>
+    <div class="footer">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-success" data-toggle="modal" data-target="#myModal">Ajouter une dépense <span class="icon glyphicon glyphicon-plus"></span></button>
+
+    </div>
+  </div>
+
+
+  <div class="column col-md-4 sidebar" >
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Ajouter une personne..." ng-model="usernameAdd">
+          <span class="input-group-btn">
+            <button class="btn btn-success" type="button"><span class="icon glyphicon glyphicon-plus"></span></button>
+          </span>
+        </div>
+        <div class="space_item"> </div>
+        <ul class="list-group">
+          <li class="list-group-item">Membre n°1 <span class="badge">12 €</span></li>
+          <li class="list-group-item">Membre n°2 <span class="badge">12 €</span></li>
+          <li class="list-group-item">Membre n°3 <span class="badge">12 €</span></li>
+          <li class="list-group-item">Membre n°4 <span class="badge">12 €</span></li>
+          <li class="list-group-item">Membre n°5 <span class="badge">12 €</span></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center">Dépense</h4>
+        </div>
+        <div class="modal-body">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input type="text" placeholder="Montant" class="form-control" ng-model="value">
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="Participant(s)" class="form-control" ng-model="participant">
+            <span class="input-group-btn">
+        <button class="btn btn-danger" type="button"><span class="icon glyphicon glyphicon-plus"></span></button>
+      </span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center">
+          <button type="button" class="btn btn-success btn-lg btn-block" data-dismiss="modal" >Valider</button>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
