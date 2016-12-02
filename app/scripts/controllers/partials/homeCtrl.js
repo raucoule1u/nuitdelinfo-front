@@ -8,10 +8,11 @@
  * Controller of the lanuitdelinfoFrontApp
  */
 angular.module('lanuitdelinfoFrontApp')
-  .controller('HomeCtrl', function () {
+  .controller('HomeCtrl', function ($location, $scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
   });

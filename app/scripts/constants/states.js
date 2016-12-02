@@ -3,7 +3,8 @@
 angular.module('lanuitdelinfoFrontApp')
 .constant('States', {
     LOGIN: 'login',
-    NOT_FOUND: 'notfound',
+    SIGNUP: 'signup',
+    NOT_FOUND: "notfound",
     BASE: 'dashboard',
     HOME: 'dashboard.home',
     GROUP: 'dashboard.group'
